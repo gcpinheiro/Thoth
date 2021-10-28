@@ -1,0 +1,23 @@
+{
+  "user": [
+    {
+      "id_usuario": 1,
+      "tipo_usuario": 2,
+      "produtos": [
+        {
+          "id_produto": 123,
+          "nome": "backend",
+          "preço": 12345.54
+        },
+        {
+          "id_produto": 123,
+          "nome": "front",
+          "preço": 12345.54
+        }
+      ]
+    }
+  ]
+
+}
+
+
