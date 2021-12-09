@@ -1,0 +1,86 @@
+.container
+  width: 100%
+  height: 100%
+  background-color: red
+  background: url('/assets/bg.jpg') no-repeat center center
+  background-size: cover
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+  form
+    width: 32%
+    height: 70%
+    display: flex
+    flex-direction: column
+    align-items: center
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    background-color: #FFF
+    border-radius: 8px
+
+    .logo
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      width: 100%
+      margin-top: 10%
+
+    .inputs
+      margin-top: 8%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      height: 24%
+      width: 100%
+      input[type="text"], input[type="password"]
+        width: 65%
+        height: 40px
+        padding-left: 5px
+        border: 1px solid #9D9D9D
+        border-radius: 8px
+        color: #9D9D9D
+
+    .checkbox
+      width: 65%
+      margin-top: 3%
+      display: flex
+      flex-direction: row
+      align-items: flex-start
+
+      input
+        height: 30px
+
+    .buttons
+      width: 65%
+      height: 10%
+      margin-top: 8%
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+
+      button
+        width: 46%
+        height: 85%
+        border-radius: 8px
+        border: none
+        color: #FFF
+        cursor: pointer
+      button:hover
+        opacity: 0.8
+
+      .criar-conta
+        background-color: #FFA400
+      .acessar
+        background-color: #2A2A72
+      .acessar-disabled
+        opacity: 1
+        background-color: #EAF6FF
+        color: #2A2A72
+
+input:focus
+    box-shadow: 0 0 0 0
+    outline: 0
+

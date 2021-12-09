@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="container">
+  <form action="">
+    <div class="logo">
+      <img src="assets/logo.png" alt="" width="250px">
+    </div>
+    <div class="inputs">
+      <input type="text" placeholder="Email" [(ngModel)] = "user.email" name="user.email">
+      <input type="password" placeholder="Senha" [(ngModel)] = "user.senha" (blur)= "validateForms()" name="senha">
+    </div>
+    <div class="checkbox">
+      <input type="checkbox">
+    </div>
+    <div class="buttons">
+      <button class="criar-conta" routerLink="/register">Criar conta</button>
+      <button class="acessar" routerLink="/home" [ngClass]="classDisabled" [disabled]="isDisabled">Acessar</button>
+    </div>
+  </form>
+</div>

@@ -1,1 +1,15 @@
-<p>register works!</p>
+<div class="container">
+  <form action="">
+    <div class="logo">
+      <img src="assets/logo.png" alt="" width="250px">
+    </div>
+    <div class="inputs">
+      <input type="text" placeholder="Digite um email" [(ngModel)] = "user.email" name="email">
+      <input type="password" placeholder="Digite uma senha" [(ngModel)] = "user.senha" name="senha" (blur)= "validateForms()">
+    </div>
+    <div class="buttons">
+      <button class="cancelar" routerLink="/login">Cancelar</button>
+      <button class="enviar" routerLink="/login" [ngClass]="classDisabled" [disabled]="isDisabled" (click)="setUser(user)">Enviar</button>
+    </div>
+  </form>
+</div>
