@@ -1,6 +1,21 @@
 <div class="container">
   <app-header class="header"></app-header>
   <div class="box">
+    <div class="box-title">
+      <h1>Produtos cadastrados</h1>
+    </div>
 
+    <div class="products">
+      <div class="box-img" *ngFor="let product of products">
+        <span>{{product?.user?.produtos.products_nome}}</span>
+        <img [src]="product?.user?.produtos.imagem_url" alt="">
+      </div>
+      <div class="complemento">
+        <span>{{products?.user.produtos.cod_barras}}</span>
+        <span>{{products?.quantidade}}</span>
+        <span>{{products?.categoria}}</span>
+        <span>{{products?.status}}</span>
+      </div>
+    </div>
   </div>
 </div>

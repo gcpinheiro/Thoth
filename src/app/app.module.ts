@@ -11,6 +11,7 @@ import { RegisterComponent } from './pages/register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './shared/header/header.component';
+import { RegisterProductsComponent } from './pages/register-products/register-products.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HeaderComponent } from './shared/header/header.component';
     LoginComponent,
     ProductsComponent,
     RegisterComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegisterProductsComponent
   ],
   imports: [
     BrowserModule,

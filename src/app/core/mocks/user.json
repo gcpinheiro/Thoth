@@ -1,18 +1,31 @@
 {
-  "user": [
+  "users": [
     {
-      "id_usuario": 1,
-      "tipo_usuario": 2,
+      "email": "gabriel@gmail.com",
       "produtos": [
         {
-          "id_produto": 123,
-          "nome": "backend",
-          "preço": 12345.54
+          "imagem_url": "/assets/televisao.jpg",
+          "products_nome": "Televisão Samsung",
+         " cod_barras": "5235423525",
+          "quantidade": 12,
+          "categoria": "Eletrônicos",
+          "status": "ativo"
         },
         {
-          "id_produto": 123,
-          "nome": "front",
-          "preço": 12345.54
+          "imagem_url": "/assets/iphone.jpg",
+          "products_nome": "Iphone 11",
+         " cod_barras": "5235423525",
+          "quantidade": 6,
+          "categoria": "Eletrônicos",
+          "status": "ativo"
+        },
+        {
+          "imagem_url": "/assets/notebook.jpg",
+          "products_nome": "Notebook Acer",
+         " cod_barras": "5235423525",
+          "quantidade": 14,
+          "categoria": "Eletrônicos",
+          "status": "ativo"
         }
       ]
     }

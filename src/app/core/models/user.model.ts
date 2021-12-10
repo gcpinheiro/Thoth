@@ -1,4 +1,11 @@
+import { Products } from "./products.model";
+
 export class User{
-  senha?: string;
   email?: string;
+  senha?: string;
+  products?: Products;
+}
+
+export class Users{
+  user?: User[];
 }

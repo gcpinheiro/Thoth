@@ -1,6 +1,8 @@
 export class Products{
-  products_id?: number;
+  imagem_url?: string;
   products_nome?: string;
-  products_preco?: number;
-
+  cod_barras?: string;
+  quantidade?: number;
+  categoria?:string;
+  status?: string;
 }
